@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Photo Galaxy Experience</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Container utama untuk animasi 3D WebGL -->
+    <div id="canvas-container"></div>
+
+    <!-- Tampilan Teks UI di atas animasi -->
+    <div class="ui-overlay">
+      <header>
+        <h1>Foto Sayangnya Acuuu</h1>
+      </header>
+      <div class="instructions">
+        Klik fotonya sayang biar diperbesar, terus bisa di zoom juga. <br />
+      </div>
+    </div>
+
+    <!-- Popup Modal saat foto diklik -->
+    <div id="photo-modal">
+      <img id="modal-img" src="" alt="Zoomed Photo" />
+    </div>
+
+    <!-- Library Three.js & OrbitControls dari CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
