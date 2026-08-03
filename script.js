@@ -181,7 +181,7 @@ scene.add(galaxy);
 // 3. Buat Foto-Foto Melayang (Ganti link di bawah dengan foto kamu sendiri)
 const singlePhotos = Array.from(
   { length: 21 },
-  (_, i) => `images/foto (${i + 1}).jpg`,
+  (_, i) => `/foto (${i + 1}).jpg`,
 );
 const photoUrls = [].concat(singlePhotos, singlePhotos, singlePhotos);
 
